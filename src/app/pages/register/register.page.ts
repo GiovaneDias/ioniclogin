@@ -95,11 +95,9 @@ export class RegisterPage implements OnInit {
       const alert = await this.alertCtrl.create({
         header: a,
         backdropDismiss: false,
-        message: 'Message <strong>text</strong>!!!',
         buttons: [
           {
             text: 'Fechar',
-            cssClass: 'secondary',
             handler: (blah) => {
               console.log('Confirm Cancel: blah');
             }

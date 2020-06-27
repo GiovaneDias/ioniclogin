@@ -5,7 +5,7 @@ import 'rxjs/add/operator/timeout';
 
 @Injectable()
 export class AccessProviders {
-    server: string = 'http://localhost/api/';
+    server: string = 'http://localhost/tutorialLogin/api/';
 
     constructor(
         public http: HttpClient
@@ -13,7 +13,7 @@ export class AccessProviders {
 
       postData(body, file) {
         let headers = new HttpHeaders({
-            'Content-Type': 'aplication/json; charset=UTF-8'
+            'Content-Type': 'application/json; charset=UTF-8'
         });
 
         let options = {
